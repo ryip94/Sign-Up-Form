@@ -9,29 +9,63 @@
 </head>
 <body>
     <div class="container mx-0 my-0 g-0">
-        <div class="row" id="leftPic">
+        <div class="row p-0 g-0 mx-0 my-0" id="leftPic">
             <div class="col-4 g-0" id="leftSide">
-            <img class="img-fluid mx-0 my-0 g-0" src="img/halie-west-25xggax4bSA-unsplash.jpg" alt="" id="leftie">
+                <img class="img-fluid mx-0 my-0 g-0" src="img/halie-west-25xggax4bSA-unsplash.jpg" alt="" id="leftie">
+                <img src="img/odin-lined.png" alt="" id="odinLogo">
             </div>
             <div class="col-8 g-0" id="rightSide">
-                <div class="container">
+                <div class="container g-0">
                     <div>
                         <div class="container" id="part1">
-                            <div>
-                                This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+                            <div class="">
+                                <h3 class="">
+                                    This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+                                </h3>
                             </div>
                         </div>
-                        <div class="container" id="part2">
-                            <div> Let's Do This! 
-                            </div>
+                        <div class="container shadow p-5 bg-white" id="part2">
+                            <h2 class="mx-2"> Let's Do This! 
+                            </h2>
+                            <form action="">
+                                <div class="container d-flex flex-row my-5">
+                                    <div class="d-flex flex-column col-4">
+                                        <label for="firstName" class="form-label">First Name</label>
+                                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Thor">
+                                    </div>
+                                    <div class="d-flex flex-column col-4 mx-5">
+                                        <label for="lastName" class="form-label">Last Name</label>
+                                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Odinson">
+                                    </div>
+                                </div>
+                            </form>
+                            <form action="">
+                                <div class="container d-flex flex-row my-5">
+                                    <div class="d-flex flex-column col-4">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="thor@yahoo.com">
+                                    </div>
+                                    <div class="d-flex flex-column col-4 mx-5">
+                                        <label for="phone" class="form-label">Phone Number</label>
+                                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="626-123-4567">
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                         <div class="container" id="part3">
-                            <div class="container my-5">  
+                            <div class="container mt-5 mx-5">  
                                 <button type="button" class="btn px-5" id="accountBtn">Create Account</button>
                             </div>
-                            <div class="container my-5">
-                                Already have an account? 
+                            <div class="d-flex flex-row container mx-5 py-0">
+                                <div class="row">
+                                    <div class="col-1 my-0" id="haveAct">
+                                        Already have an account?
+                                    </div>
+                                    <button type="button" class="btn btn-link col-3" id="loginBtn">Log In</button>
+                                    <div class="col-10"></div>
+                                </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -43,11 +77,52 @@
     #leftie {
         height: 100vh;
         width: auto;
+        position: relative;
     }
 
     #accountBtn {
         background-color: #596D48;
         color: white;
+    }
+
+    #odinLogo {
+        position: absolute;
+        height: 200px;
+        left: 140px;
+        
+    }
+
+    #leftSide {
+        position:relative;
+    }
+
+    #loginBtn{
+        color: #596D48;
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    #haveAct {
+        display: flex;
+        width: fit-content;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    body{
+        background-color: rgb(244, 242, 242);
+        margin: 0;
+        padding: 0;
+    }
+
+    #part1 {
+        height: 200px;
+        display: flex;
+        align-items: flex-end;
+        padding: 30px;
+        padding-left: 50px;
     }
 </style>
 </body>
